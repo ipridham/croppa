@@ -135,6 +135,8 @@ class Storage {
      * @return boolean
      */
     public function cropsAreRemote() {
+        
+        return true;
         $adapter = $this->getCropsDisk()->getAdapter();
 
         // If using a cached adapter, get the actual adapter that is being cached.
